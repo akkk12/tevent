@@ -1,0 +1,111 @@
+
+body{
+	background: rgb(255,218,236);
+background: linear-gradient(0deg, rgba(255,218,236,1) 0%, rgba(255,243,253,1) 100%);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;}
+h1{
+	text-align: center;
+	text-shadow: 0 5px 20px rgba(0,0,0,0.2);
+	font-family: 'Alata', sans-serif;
+}
+.images{
+	transition: 0.3s;
+}
+.images:hover{
+	opacity:0.2;
+	transition-delay: 0.1s;
+	
+
+}
+.container {
+  position: relative;
+  width: 50%;
+  height:80vh;
+  margin: auto;
+}
+
+.image {
+  display: block;
+
+  height: 80%;
+
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  background-color: pink;
+  height: 80%;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+  border-radius:50%;
+}
+
+	
+
+
+.text {
+	font-family: 'Alata', sans-serif;
+	text-shadow: 2px 2px rgba(218, 223, 225, 1);
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+@media all and (max-width: 1200px){
+	.text {
+	 font-size:18px;
+  
+}
+
+.container{
+	width:70%;
+}
+}
+
+@media all and (max-width: 700px){
+	.text {
+	 font-size:15px;
+  
+}
+.container{
+	width:80%;
+}
+
+@media all and (max-width: 380px){
+	.text {
+	 font-size:10px;
+  
+}
+.container{
+	width:85%;
+}
+}
